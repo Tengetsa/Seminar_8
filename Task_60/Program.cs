@@ -8,6 +8,7 @@ void Task62()
 
     int[,,] cube = new int[size, size, size];
     FillArray(cube);
+    Console.WriteLine();
     PrintArrayIndex(cube);
 }
 
@@ -54,14 +55,15 @@ void PrintArrayIndex(int[,,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
-
+        Console.WriteLine($"{i + 1}-ый срез куба");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.WriteLine();
+
             for (int n = 0; n < array.GetLength(2); n++)
             {
                 Console.Write($"{array[i, j, n]}({i},{j},{n}) ");
             }
+            Console.WriteLine();
         }
         Console.WriteLine();
     }
