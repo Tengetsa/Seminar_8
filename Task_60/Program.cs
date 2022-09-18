@@ -3,12 +3,12 @@
 
 void Task62()
 {
-Console.WriteLine("Задайте размер куба но не больше 4(иначе двузначных чисел не хватит): ");
-int size = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Задайте размер куба но не больше 4(иначе двузначных чисел не хватит): ");
+    int size = Convert.ToInt32(Console.ReadLine());
 
-int[,,] cube = new int[size, size, size];
-FillArray(cube);
-PrintArrayIndex(cube);
+    int[,,] cube = new int[size, size, size];
+    FillArray(cube);
+    PrintArrayIndex(cube);
 }
 
 void FillArray(int[,,] array)
@@ -47,7 +47,6 @@ bool NumbersWithoutRepetition(int[,,] array, int numbers)
             }
         }
     }
-
     return false;
 }
 
